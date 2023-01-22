@@ -1,4 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {  faMedkit, faStar, faMagic, faFistRaised, faShieldAlt, faCrown,faHeart } from '@fortawesome/free-solid-svg-icons';
+
+
  
 
 function BotCollection(props) {
@@ -30,23 +34,34 @@ function BotCollection(props) {
         alert("Failed to delete bot.");
       });
   };
+  const classIcons = {
+     
+    "Healer": faHeart,
+    "Support": faStar,
+    "Medic": faMedkit,
+    "Witch": faMagic,
+    "Assault": faFistRaised,
+    "Defender": faShieldAlt,
+    "Captain": faCrown
+  };
 
 
   return (
-    <center>
+    <center className='body'>
       <div  >
-            <h2>Bot Collection</h2>
+            <h2 className='tittle'>Bot Collection</h2>
             {bots.map(bot => (
               
                 <div className='bot-card'
                 onClick={() => handleClick(bot)}
                   key={bot.id}>
                     <img className='bot-img' src={bot.avatar_url} alt={bot.name} />
-                    <h5 className='bot-name'>Name:{bot.name}</h5>
-                    <p className='bot-armor'>Armor: {bot.armor}</p>
-                    <p className='bot-damage'>Damage: {bot.damage}</p>
-                    <p className='bot-health'>Health: {bot.health}</p>
-                    <p className='bot-class'>Bot Class: {bot.bot_class}</p>
+                    <h5 className='bot-name'>{bot.name}<FontAwesomeIcon icon={classIcons[bot.bot_class]} /></h5>
+                    <h6 className='bot-catchphrace'>{bot.catchphrase}</h6>
+                    <p className='bot-armor'><FontAwesomeIcon icon={faShieldAlt} />{bot.armor}</p>
+                    <p className='bot-damage'>{bot.damage}</p>
+                    <p className='bot-health'><FontAwesomeIcon icon={faHeart} />{bot.health}</p>
+                     
                     <button className='delete-bot' onClick={() => handleDelete(bot)}>x</button>
                 </div>
                 
