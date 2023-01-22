@@ -4,7 +4,7 @@
   
  }
  .body{
-  background: url('/home/levi/code2/bot-app/src/image.jpg/myImage.jpg');
+  /* background: url('/home/levi/code2/bot-app/src/image.jpg/myImage.jpg'); */
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 20px;
@@ -24,8 +24,8 @@
    text-shadow: 3px 4px 7px rgb(209, 185, 185);
  }
  .army{
-  /* background-color: rgb(41, 72, 54); */
-  background: url('/home/levi/code2/bot-app/src/image.jpg/img2.jpg');
+  background-color: rgb(41, 72, 54);
+  /* background: url('/home/levi/code2/bot-app/src/image.jpg/img2.jpg'); */
  }
  
  .header{
