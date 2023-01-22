@@ -18,7 +18,7 @@ function App() {
   }
 return(
    
-  <div>
+  <div className='App'>
     <h2 className='header'>THE BOT COLLECTION  </h2>
       <YourBotArmy yourArmy={yourArmy} removeBot={removeBot}/>
       <BotCollection addBot={addBot} yourArmy={yourArmy} />

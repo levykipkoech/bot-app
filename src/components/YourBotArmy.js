@@ -10,7 +10,7 @@ function YourBotArmy(props) {
   const handleRemove = (bot) => {
     props.removeBot(bot);
   }
-  const handleDelete = bot => {
+  const handleDelete = (bot) => {
     fetch(`https://api.npoint.io/3f9834e1240b04eb4361/bots/${bot.id}`, {
       method: "DELETE"
     })
@@ -39,17 +39,21 @@ function YourBotArmy(props) {
 
   return (
     <div className='army'>
-      <h2 className='bot-army'>Your Bot Army</h2>
+      <h2 className='bot-army'>Your Bot Army
+      <h6>click on the bot to remove from your army</h6>
+      </h2>
+      
       <div  >
         {props.yourArmy.map(bot => (
           <div className='bot-card' onClick={() => handleRemove(bot)}
           key={bot.id}>
           <img className='bot-img' src={bot.avatar_url} alt={bot.name} />
-            <h5 className='bot-name'>Name:{bot.name}</h5>
+            <h5 className='bot-name'>{bot.name}<FontAwesomeIcon icon={classIcons[bot.bot_class]}/></h5>
+            <h6 className='bot-catchphrace'>{bot.catchphrase}</h6>
             <p className='bot-armor'><FontAwesomeIcon icon={faShieldAlt} />{bot.armor}</p>
             <p className='bot-damage'>{bot.damage}</p>
             <p className='bot-health'><FontAwesomeIcon icon={faHeart} />{bot.health}</p>
-            <p className='bot-class'> <FontAwesomeIcon icon={classIcons[bot.bot_class]} /> {bot.bot_class}</p>
+            
             <button className='delete-bot' onClick={() => handleDelete(bot)}>x</button>
           </div>
         ))}
