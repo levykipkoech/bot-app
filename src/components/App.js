@@ -1,7 +1,9 @@
 import React from 'react';
+import './App.css'
 import BotCollection from './Bot-colletion.js'
 import YourBotArmy from './YourBotArmy';
-import './App.css'
+ 
+
 
 function App() {
   const [yourArmy, setYourArmy] = React.useState([]);
