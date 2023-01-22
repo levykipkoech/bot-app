@@ -25,7 +25,7 @@
  }
  .army{
   /* background-color: rgb(41, 72, 54); */
-  background: url('/home/levi/code2/bot-app/src/image.jpg/img.jpg');
+  background: url('/home/levi/code2/bot-app/src/image.jpg/img2.jpg');
  }
  
  .header{
@@ -43,11 +43,11 @@
   max-width: 200px;
   border: 1px solid black;
   border-radius: 5px;
-  box-shadow: 10px 10px 10px 10px black;
+  box-shadow: 3px 2px 2px 5px rgb(215, 201, 44);
   overflow: hidden;
-  /* background-color: rgb(133, 131, 43); */
+   
   margin-top: auto;
-  color: red;
+  color: rgb(22, 224, 243);
 }
 .bot-name{
   padding: 10px;
