@@ -18,12 +18,12 @@ function YourBotArmy(props) {
         if (response.ok) {
           setBots(bots.filter(b => b.id !== bot.id));
         } else {
-          throw new Error("Failed to delete bot.");
+          throw new Error("");
         }
       })
       .catch(error => {
         console.error(error);
-        alert("Failed to delete bot.");
+        alert("")
       });
   };
   const classIcons = {
@@ -40,9 +40,9 @@ function YourBotArmy(props) {
   return (
     <center>
     <div className='army'>
-      <h2 className='bot-army'>Your Bot Army
+      <h4 className='bot-army'>Your Bot Army
       <h6>click on the bot to remove from your army</h6>
-      </h2>
+      </h4>
       
       <div  >
         {props.yourArmy.map(bot => (
