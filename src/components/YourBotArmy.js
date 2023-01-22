@@ -38,6 +38,7 @@ function YourBotArmy(props) {
   };
 
   return (
+    <center>
     <div className='army'>
       <h2 className='bot-army'>Your Bot Army
       <h6>click on the bot to remove from your army</h6>
@@ -59,6 +60,7 @@ function YourBotArmy(props) {
         ))}
       </div>
     </div>
+    </center>
   );
 }
 
