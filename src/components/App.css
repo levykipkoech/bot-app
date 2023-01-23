@@ -9,15 +9,17 @@
   margin-bottom: 10px;
   margin-left: 20px;
   margin-right: 20px;
+  padding-top: 20px;
+  
  }
  .tittle{
   background-color: black;
   color: white;
+  
   box-shadow: 3px 4px 7px rgb(2, 8, 7);
  }
  .bot-army{
   background-color: rgb(1, 15, 11);
-  /* background: url('./image.jpg'); */
   text-align: center;
   color: white;
   box-shadow: 3px 4px 7px rgb(20, 19, 19);
@@ -26,6 +28,7 @@
  .army{
   /* background-color: rgb(41, 72, 54); */
   background-image: url('/home/levi/code2/bot-app/src/image.jpg/img2.jpg');
+  padding-bottom: 30%;
  }
  
  .header{

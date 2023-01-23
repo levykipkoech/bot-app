@@ -49,7 +49,7 @@ function BotCollection(props) {
   return (
     <center className='body'>
       <div>
-            <h2 className='tittle'>Bot Collection
+            <h2 className='tittle'>Bot Battlr App
               <h6>clickon the bot to add to your Army</h6>
             </h2>
             {bots.map(bot => (
