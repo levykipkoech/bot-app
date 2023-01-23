@@ -31,7 +31,7 @@ function BotSpecs(props) {
       <center>
       <div className='bot-actions'>
         <button className='enlist-bot' onClick={() => handleEnlist(bot)}>
-          Enlist
+          Add to Army
         </button>
         <button className='back-button' onClick={handleBack}>
           Back
