@@ -2,10 +2,9 @@ import React from "react";
 
 function sortBar(){
    
-    const handleSort=(()=>{
+     
 
-        
-    })
+    
 
     return(
         <></>

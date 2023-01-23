@@ -52,8 +52,9 @@
   overflow: hidden;
   width: fit-content;
   margin-top: auto;
-  color: rgb(236, 242, 243);
+  color: rgb(2, 40, 46);
 }
+ 
 .bot-card-wraper{
   display: flex;
   flex-wrap: wrap;
@@ -71,8 +72,8 @@
 }
 .bot-catchphrace{
   padding-right: 100%;
-  display: flex;
   flex-wrap: wrap;
+  max-width: 200px;
 }
 
 .bot-name {
@@ -101,5 +102,16 @@
   cursor: grab;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   object-position: 10% 10%;
+}
+.bot-actions{
+   
+  border: none;
+   
+}
+.enlist-bot{
+   
+  margin-top: 24px;
+  margin-bottom: 10px;
+  text-align: center;
 }
  

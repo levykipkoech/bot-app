@@ -15,6 +15,7 @@ function BotSpecs(props) {
   };
 
   return (
+   
     <div className='bot-card'>
       <img className='bot-img' src={bot.avatar_url} alt={bot.name} />
       <div className='bot-info'>
@@ -27,6 +28,7 @@ function BotSpecs(props) {
             <p className='bot-damage'>{bot.damage}</p>
             <p className='bot-health'><FontAwesomeIcon icon={faHeart} />{bot.health}</p>
       </div>
+      <center>
       <div className='bot-actions'>
         <button className='enlist-bot' onClick={() => handleEnlist(bot)}>
           Enlist
@@ -35,7 +37,9 @@ function BotSpecs(props) {
           Back
         </button>
       </div>
+      </center>
     </div>
+  
   );
 }
 
