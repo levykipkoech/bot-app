@@ -24,7 +24,7 @@
 }
  }
  .body{
-  /* background-image: url('/home/levi/code2/bot-app/src/image.jpg/myImage.jpg'); */
+  background-image: url('/home/levi/code2/bot-app/src/image.jpg/myImage.jpg');
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 20px;
@@ -48,7 +48,7 @@
  }
  .army{
   background-color: rgb(151, 156, 153);
-  /* background-image: url('/home/levi/code2/bot-app/src/image.jpg/img2.jpg'); */
+  background-image: url('/home/levi/code2/bot-app/src/image.jpg/img2.jpg');
    padding-bottom: 30px;
    
  }
@@ -65,6 +65,7 @@
 .bot-card{
   display: inline-block;
   margin: 10px;
+  
   max-width: 200px;
   border: 1px solid black;
   border-radius: 5px;
@@ -111,6 +112,7 @@
   padding-right: 100%;
   flex-wrap: wrap;
   max-width: 200px;
+ 
 }
 
 .bot-name {
