@@ -56,9 +56,10 @@ function BotCollection(props) {
   return (
     <center className='body'>
       <div>
-            <h2 className='tittle'>Bot Battlr App
-              <h6>clickon the bot to add to your Army</h6>
-            </h2>
+           <div className='tittle'>
+            <h2 >Bot Battlr App</h2>
+              <h6>click on the bot to add to your Army</h6>
+              </div>
             {selectedBot ? (
               <BotSpecs
                 bot={selectedBot}

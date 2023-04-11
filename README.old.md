@@ -1,4 +1,5 @@
 # Project Tittle
+
 Bot Bottlr
 
 ## Description
@@ -17,6 +18,7 @@ Open a terminal / command line interface on your computer
 Clone the repo by using the following:
 
         git clone git@github.com:levykipkoech/bot-app.git
+        
 Be patient as it creates a copy on your local machine for you.
 
 Change directory to the repo folder:
